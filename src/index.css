@@ -64,7 +64,8 @@ colors are black white and blue
   padding-left: 0;
   border-right: white 4px solid;
   border-style: groove;
-  width: 5vw;
+  max-width: fit-content;
+  min-width: 5vw;
   height: 100vh;
   background-color: rgba(0, 0, 0);
 }
@@ -216,6 +217,27 @@ colors are black white and blue
   overflow-y: scroll;
 
 }
+.fundBundlrModal{
+  box-sizing: border-box;
+	border-radius: 1em;
+  border: black 4px solid;
+  border-style: groove;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1em;
+  z-index: 1050;
+  max-width: 800px;
+  height: 75vh;
+  background-image: radial-gradient(rgb(0, 0, 184), black);
+  color: var(--color-text);
+  box-shadow:  0 25px 25px rgb(0 0 0 / 0.15);
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  flex: 1;
+  overflow-y: scroll;
+
+}
 
 .title {
   display: flex;
@@ -285,6 +307,105 @@ colors are black white and blue
 .walletButton:hover .invert {
 	filter: none;
 }
+.modal-button-left{
+  display: flex;
+  margin: 0;
+  text-align: center;
+  border: silver 2px solid;
+  border-style: outset;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-left: none;
+  width: 100%;
+  height: 4em;
+  color: silver;
+  background-image: linear-gradient(to bottom right, black, blue);
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal-button-left:hover{
+  border: gold 2px solid;
+}
+.modal-button-middle{
+  display: flex;
+  margin: 0;
+  text-align: center;
+  border: silver 2px solid;
+  border-style: outset;
+  border-radius: 1em;
+  border-left: none;
+  width: 100%;
+  height: 4em;
+  color: silver;
+  background-image: linear-gradient(to bottom, black, blue);
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal-button-middle:hover{
+  border: gold 2px solid;
+}
+.modal-button-right{
+  display: flex;
+  margin: 0;
+  text-align: center;
+  border: silver 2px solid;
+  border-style: outset;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-left: none;
+  width: 100%;
+  height: 4em;
+  color: silver;
+  background-image: linear-gradient(to bottom left, black, blue);
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal-button-right:hover{
+  border: gold 2px solid;
+}
+.modal-button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: bottom;
+  width: 100%;
+  margin: 0%;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: 4px white solid;
+  border-style: groove;
+
+}
+.modal-input{
+  display: flex;
+  margin: 0;
+  text-align: center;
+  border: silver 2px solid;
+  border-style: outset;
+  border-radius: 1em;
+  border-left: none;
+  width: 90%;
+  height: 2em;
+  color: black;
+  background-image: linear-gradient(to bottom, blue, white);
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 
 .closeButton {
 	display: flex;
